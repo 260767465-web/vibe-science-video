@@ -9,6 +9,7 @@
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
+  <script src="download-stats.js" type="module"></script>
 </head>
 <body>
 <a class="skip" href="#main">跳到正文</a>
@@ -81,7 +82,15 @@
   </div></section>
 
   <section class="section wrap install-section" id="install">
-    <div><p class="eyebrow">04 / TAKE IT WITH YOU</p><h2>把这套方法，<br>装进下一次创作。</h2><p>下载 Skill 压缩包，解压后运行安装脚本。<br>支持 Codex；安装过程不会安装依赖或调用外部 API。</p><a class="button primary" href="https://github.com/260767465-web/vibe-science-video/releases/download/v1.0.0/vibe-science-video.zip">下载 Skill ZIP <span aria-hidden="true">↓</span></a><p class="fine"><a href="https://github.com/260767465-web/vibe-science-video/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">v1.0.0 · 查看版本说明 ↗</a></p><p class="fine">需要 Node.js。目标目录已存在时，脚本会停止，保留原有文件。</p></div>
+    <div><p class="eyebrow">04 / TAKE IT WITH YOU</p><h2>把这套方法，<br>装进下一次创作。</h2><p>下载 Skill 压缩包，解压后运行安装脚本。<br>支持 Codex；安装过程不会安装依赖或调用外部 API。</p><a class="button primary" href="https://github.com/260767465-web/vibe-science-video/releases/download/v1.0.0/vibe-science-video.zip">下载 Skill ZIP <span aria-hidden="true">↓</span></a>
+      <div class="download-stats" id="download-stats" data-api="https://api.github.com/repos/260767465-web/vibe-science-video/releases/tags/v1.0.0" data-asset="vibe-science-video.zip">
+        <div class="download-stats-top"><span>v1.0.0 下载次数</span><button type="button" id="refresh-downloads" disabled>刷新 ↻</button></div>
+        <p class="download-total" role="status" aria-live="polite"><strong id="download-count">—</strong><span>次</span></p>
+        <p class="download-status" id="download-status">正在读取 GitHub 统计…</p>
+        <p class="download-note">打开页面自动查询，停留时每 5 分钟更新。<br>统计 Release 附件下载次数，含重复下载；GitHub 数据可能延迟。</p>
+        <noscript><p class="download-note">请启用 JavaScript 以查看自动更新的下载次数。</p></noscript>
+      </div>
+      <p class="fine"><a href="https://github.com/260767465-web/vibe-science-video/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer">v1.0.0 · 查看版本说明 ↗</a></p><p class="fine">需要 Node.js。目标目录已存在时，脚本会停止，保留原有文件。</p></div>
     <div class="install-steps"><div><span>1</span><p>解压并进入 <code>vibe-science-video</code> 文件夹。</p></div><div><span>2</span><p>在终端运行：</p><pre><code>node scripts/install.mjs</code></pre><button class="copy-command" id="copy-install" type="button">复制命令</button></div><div><span>3</span><p>新开一段对话，使用 <code>$vibe-science-video</code>，附上你的主题。</p></div><a class="repo-link text-link" href="https://github.com/260767465-web/vibe-science-video#readme" target="_blank" rel="noopener noreferrer">查看完整源码与安装说明 ↗</a></div>
   </section>
 
