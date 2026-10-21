@@ -2,7 +2,7 @@
 
 **把一个问题，变成看得懂的动画。**
 
-[浏览介绍页与风格实验室](https://260767465-web.github.io/vibe-science-video/) · [下载 Skill ZIP](https://260767465-web.github.io/vibe-science-video/assets/vibe-science-video.zip)
+[浏览介绍页与风格实验室](https://260767465-web.github.io/vibe-science-video/) · [下载 Skill ZIP · v1.0.0](https://github.com/260767465-web/vibe-science-video/releases/download/v1.0.0/vibe-science-video.zip) · [版本说明](https://github.com/260767465-web/vibe-science-video/releases/tag/v1.0.0)
 
 用于代码驱动科普动画的中文 Skill：从主题、事实核查和动态分镜，推进到 Remotion 工程、预览与 MP4 交付。
 
@@ -69,6 +69,8 @@ npm run render
 只把定义分成一页页文字，再加弹出效果，不能替代原理演示。
 
 ## 校验与维护
+
+正式 Skill 下载包通过 GitHub Releases 附件分发。可在 [Release API](https://api.github.com/repos/260767465-web/vibe-science-video/releases/tags/v1.0.0) 中查看对应附件的 `download_count`；这是下载次数，不等于独立用户数，也不包含仓库克隆或其他 ZIP 链接的下载。
 
 ```sh
 node scripts/check-timeline.mjs examples/scene-plan.json
