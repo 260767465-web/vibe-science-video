@@ -4,6 +4,8 @@ Remotion 通过代码组织动画，Studio 在浏览器中预览，CLI 或 Studi
 
 本仓库示例采用 Remotion `4.0.537`，以该版本完成 Windows x64 的中文、预览与 H.264 MP4 验证。它是可复现的基线，不代表执行当日的最新版；其他系统按官方要求准备环境。所有 Remotion 包应保持同版本。
 
+Remotion 采用其自身许可；本项目的 MIT 不替它授予免费或商业使用权。使用前按实际主体和用途核对[官方许可](https://www.remotion.dev/docs/license)与所用版本条款。其他依赖及字体说明见 [../THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md)。
+
 ## 生成独立示例
 
 ```sh

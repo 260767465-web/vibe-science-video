@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10151b"><meta name="description" content="Vibe 科普动画 Skill 的教程来源、图形与视频制作记录、第三方依赖及许可范围。"><title>来源与许可 · Vibe 科普动画</title><link rel="icon" href="assets/mark.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"></head><body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header wrap"><a class="brand" href="index.html"><img src="assets/mark.svg" width="34" height="34" alt=""><span>VIBE<span class="brand-small">SCIENCE VIDEO</span></span></a><nav aria-label="主导航"><a href="index.html">返回介绍页</a><a href="#dependency-notes">软件与字体</a></nav><a class="text-link" href="https://github.com/260767465-web/vibe-science-video">GitHub ↗</a></header>
+<main id="main" class="wrap rights-page"><p class="eyebrow">SOURCES &amp; LICENSES / UPDATED 2026-10-21</p><h1>来源与许可</h1><p class="rights-lead">制作资料、代码与素材的来源记录。公开说明学习与改写范围，分别列明本项目和第三方权利。</p><nav class="rights-nav" aria-label="本页目录"><a href="#source-notes">教程与素材 ↓</a><a href="#dependency-notes">软件与字体 ↓</a><a href="#mit-license">MIT 原文 ↓</a></nav>
+<section id="source-notes" class="notice-content"><p>维护与整理：<strong>王磊发现新玩意</strong>。本项目在 AI 辅助下整理教程方法、重新编写说明，并制作配套代码、页面图形和示例。记录更新：2026-10-21。</p>
+<h2>1. 教程来源与使用方式</h2>
+<p>主要学习来源为 <strong>Git源宝</strong> 的公开教程：</p>
+<ul>
+<li><a href="https://www.bilibili.com/video/BV1ALnw6YEM7/">B站视频：《为什么你老能刷到 AI 动画科普视频？它是怎么做的？vibe动画是什么意思？》</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzIyODMzMjg4Ng==&amp;mid=2247488520&amp;idx=1&amp;sn=4d54c2ed5622a8b390d15f830bf9e849">公众号文章：《零基础，不用 AE，我靠 AI 做出了动画》</a></li>
+<li><a href="https://gcnw06d95nrz.feishu.cn/docx/KtSgdMmi7oCZS2xqMKXcWCKqndc">飞书配套文档及作者发布的提示词、15 套风格资料</a></li>
+</ul>
+<p>本项目参考了先组织动态分镜、再实现代码动画的思路，以及风格分类和若干设计要点。流程、提示词和选型说明经过重新组织、概括与编写，包含本项目增加的统一时间轴、环境复用、导出检查等要求；不宣称教程方法、这 15 类风格或相关分类由本项目首创。</p>
+<p>未取得上述教程原始材料的公开再分发授权。本仓库与下载包不提供原版 PDF、原始完整提示词、原视频、文章截图、原配图、原音乐或推广凭据。查阅完整教程及原版模板请访问原作者渠道。本项目不是 Git源宝、Remotion、OpenAI 或其他所提及主体的官方项目，未获得其背书。</p>
+<p>补充学习与对照资料：<a href="https://github.com/Vincentwei1021/mg-styles-15">Vincentwei1021 / mg-styles-15</a>，署名为 <strong>Vincentwei1021</strong>，其仓库自身内容采用 <a href="https://github.com/Vincentwei1021/mg-styles-15/blob/main/LICENSE">MIT 许可</a>。本项目未内置该仓库的代码、配图、成片或完整提示词；未核实其与 Git源宝飞书附件的来源关系，不将它称作附件镜像或已确认的上游。该仓库的许可不代表 Git源宝材料也采用相同许可。</p>
+<h2>2. 公开内容的来源记录</h2>
+<table>
+<thead>
+<tr>
+<th>内容</th>
+<th>来源与处理方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>SKILL.md</code>、流程与提示词文档</td>
+<td>参考教程方法后，在 AI 辅助下重新组织与编写；保留来源，不作为原作者原文发布</td>
+</tr>
+<tr>
+<td><code>references/styles.md</code>、网页风格选型文字</td>
+<td>参考教程分类与要点，按表达任务概括重组；不是原版 15 套模板，也不是 15 个现成工程</td>
+</tr>
+<tr>
+<td>网页标识、15 张示意图与动效</td>
+<td>本项目用 SVG、CSS、JavaScript 编写绘制；未复制原文章配图或补充仓库图形</td>
+</tr>
+<tr>
+<td>Remotion 示例源码、安装与辅助脚本</td>
+<td>本项目为此 Skill 编写；使用的第三方 API 与依赖仍按各自许可提供</td>
+</tr>
+<tr>
+<td><code>docs/assets/demo.mp4</code></td>
+<td>从自带示例工程渲染的 6 秒流程示意；没有原教程视频片段、配乐或配音</td>
+</tr>
+<tr>
+<td><code>docs/assets/demo-poster.jpg</code></td>
+<td>上述自带示例的截帧，不是原文章截图</td>
+</tr>
+<tr>
+<td>字体</td>
+<td>网页调用设备已有字体；示例使用系统字体栈。未打包或托管字体文件，视频中文字已光栅化，不包含可提取的字体程序</td>
+</tr>
+</tbody>
+</table>
+<p>参考资料中的通用术语、风格名称和必要的作品标题可能与来源一致；这不构成“所有文字均独创”的声明。图形样式示意也不是特定作者作品的复刻承诺。</p>
+<h2>3. 本项目许可与第三方权利</h2>
+<p><a href="LICENSE.txt">LICENSE</a>保留标准 MIT 文本。许可仅在维护者实际享有且有权授予的权利范围内，覆盖本项目新增的代码、脚本、页面实现、示例和自行编写的表达。它不授予参考教程的原有表达与编排、第三方原始提示词、依赖软件、字体、商标、照片、音乐或其他第三方材料的权利，也不保证 AI 辅助产出在所有地区均构成受保护作品。</p>
+<p>复制本项目代码或其实质部分时，按 MIT 保留版权和许可文本。建议一并保留本来源说明，避免把学习整理内容误标为首创；第三方材料若适用其他署名或许可条件，应遵守相应条件。这里不为标准 MIT 增加额外的使用限制。</p>
+<p>Remotion 使用自己的许可，不属于本项目的 MIT 授权范围。是否需要另行取得商业使用许可，应以适用版本与<a href="https://www.remotion.dev/docs/license">官方条款</a>为准。依赖及字体说明见 <a href="#dependency-notes">THIRD_PARTY_NOTICES.md</a>。</p>
+<h2>4. 使用与异议处理</h2>
+<p>署名、改写、免费分享或添加免责声明，都不能自动代替依法需要的许可。若进一步使用原作者的具体表达、具有独创性的编排、原版模板、截图或音视频，应核实使用范围与授权依据；本文件不是授权书，也不是对任何使用情形的无侵权保证。</p>
+<p>权利人可通过<a href="https://github.com/260767465-web/vibe-science-video/issues/new">本项目 Issue</a>联系维护者，提供涉及的仓库文件或页面位置、原作品链接、权利依据与具体诉求。请勿在公开 Issue 提交身份证件、密码或其他敏感信息。核实后按情况补充署名、替换、移除相关内容，或进一步取得授权；联系渠道不以提供额外材料作为提出异议的前提。</p>
+<p>本次记录针对公开文件、下载包、图片与视频资产以及依赖声明；文字比对只能辅助发现直接复制，不能据此排除实质性相似或未发现的权利问题。正式授权、争议或特定商业项目仍需结合具体事实处理。</p>
+<p>依据与参考：<a href="https://www.ncac.gov.cn/xxfb/flfg/flfg_532/202103/t20210309_50530.html">《中华人民共和国著作权法》第十、十三、十五、二十四、二十六条</a>、<a href="https://opensource.org/license/mit">MIT 标准文本</a>、<a href="https://www.remotion.dev/docs/license">Remotion 许可说明</a>。</p>
+</section>
+<section id="dependency-notes" class="notice-content"><h2>第三方软件、字体与参考资料</h2><p>本文件说明依赖与素材边界，不把第三方软件改授为本项目 MIT 许可。记录更新：2026-10-21。完整教程来源及内容处理方式见 <a href="#source-notes">NOTICE.md</a>。</p>
+<h2>软件依赖</h2>
+<p>下表按自带示例声明的版本及对应已安装包的许可信息核对。仓库和 Skill ZIP 不内置 <code>node_modules</code>、第三方软件源码或可执行程序；安装依赖时取得的软件仍适用各自许可。这里列出直接依赖，不是所有传递依赖的完整清单。</p>
+<table>
+<thead>
+<tr>
+<th>软件／版本</th>
+<th>权利人与许可来源</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>remotion</code>、<code>@remotion/cli</code> 4.0.537</td>
+<td>Remotion；采用 Remotion 自身许可，不是 MIT。查阅<a href="https://www.remotion.dev/docs/license">许可条款</a>、<a href="https://www.remotion.dev/docs/license/faq">使用与商业许可说明</a>，以及实际安装包的 <code>LICENSE.md</code></td>
+</tr>
+<tr>
+<td><code>react</code>、<code>react-dom</code> 19.2.3</td>
+<td>Meta Platforms, Inc. and affiliates；<a href="https://github.com/facebook/react/blob/main/LICENSE">MIT</a></td>
+</tr>
+<tr>
+<td><code>typescript</code> 5.9.3</td>
+<td>Microsoft Corporation；<a href="https://github.com/microsoft/TypeScript/blob/main/LICENSE.txt">Apache-2.0</a></td>
+</tr>
+<tr>
+<td><code>@types/react</code> 19.2.7</td>
+<td>DefinitelyTyped contributors；<a href="https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/LICENSE">MIT</a>，具体署名见安装包 <code>LICENSE</code></td>
+</tr>
+<tr>
+<td><code>@types/web</code> 0.0.166</td>
+<td>Microsoft Corporation／TypeScript-DOM-Lib-Generator contributors；<a href="https://github.com/microsoft/TypeScript-DOM-Lib-Generator/blob/main/LICENSE.txt">Apache-2.0</a></td>
+</tr>
+</tbody>
+</table>
+<p>链接指向项目的许可来源；不同版本如有变化，以实际取得的软件包及适用条款为准。安装 Skill 本身不代表已取得 Remotion 的付费许可，也不意味着所有用户均可无限制免费商用。</p>
+<p>未来若分发包含依赖的软件构建、浏览器、渲染工具或字体文件，应另行收集对应版本及传递依赖的版权、许可与 NOTICE；不能只携带本项目 LICENSE。</p>
+<h2>图形、视频、字体与商标</h2>
+<ul>
+<li>公开的 SVG 图形、CSS 动效、6 秒示例视频及其封面由本项目编写代码或渲染生成，使用 AI 辅助；示例无音乐、配音、原教程画面、照片或外部素材视频。</li>
+<li>页面没有外部字体 CDN、<code>@font-face</code> 字体下载或内置字体程序。字体栈中的产品名只是设备字体候选项，不表示获得字体再分发权。</li>
+<li>当前示例在 Windows 环境中调用系统中文字体进行位图渲染。微软关于图片、视频文字和网页字体栈的说明见<a href="https://learn.microsoft.com/en-us/typography/fonts/font-faq">字体使用与再分发 FAQ</a>。该说明不替其他字体或特定应用授予许可；改用其他字体时需核实相应条款。</li>
+<li>Git源宝、Remotion、React、OpenAI、GitHub 等名称仅用于来源或兼容性说明；相关名称、商标与第三方标识不因本项目 MIT 许可而转移。网页的自绘 VIBE 标识不表示已完成商标检索或注册。</li>
+</ul>
+<h2>参考而未内置的项目</h2>
+<p><a href="https://github.com/Vincentwei1021/mg-styles-15">Vincentwei1021 / mg-styles-15</a>作为补充学习资料列明，版权署名为 Vincentwei1021，许可为 <a href="https://github.com/Vincentwei1021/mg-styles-15/blob/main/LICENSE">MIT</a>。本包没有分发该项目的文件；若以后复制其代码、提示词或其他实质内容，应保留其版权与许可文本，并分别核实其中第三方素材的许可。它与 Git源宝附件的来源关系未被核实。</p>
+</section>
+<section id="mit-license" class="notice-content"><h2>MIT 许可文本</h2><p>适用范围见上方说明。第三方材料与软件不因本文件而被重新许可。</p><details><summary>展开标准 MIT 文本</summary><pre>MIT License
+
+Copyright (c) 2026 王磊发现新玩意 contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre></details><p class="raw-links"><a href="NOTICE.txt">下载来源说明 TXT ↗</a><a href="THIRD_PARTY_NOTICES.txt">下载第三方说明 TXT ↗</a><a href="LICENSE.txt">下载 MIT 文本 ↗</a></p></section>
+</main><footer class="wrap"><a class="brand" href="index.html"><img src="assets/mark.svg" width="26" height="26" alt=""> VIBE</a><span>来源可查，范围清楚。</span><span>项目维护：王磊发现新玩意</span></footer></body></html>

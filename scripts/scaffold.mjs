@@ -20,6 +20,9 @@ try { entries = await readdir(out); } catch (error) {
 if (entries?.length) throw new Error(`Target is not empty; nothing was overwritten: ${out}`);
 await mkdir(out, { recursive: true });
 await cp(path.join(root, 'assets', 'starter'), out, { recursive: true });
+for (const notice of ['LICENSE', 'NOTICE.md', 'THIRD_PARTY_NOTICES.md']) {
+  await cp(path.join(root, notice), path.join(out, notice));
+}
 await mkdir(path.join(out, 'scripts'), { recursive: true });
 await cp(path.join(root, 'scripts', 'check-timeline.mjs'), path.join(out, 'scripts', 'check-timeline.mjs'));
 console.log(`Created an independent Remotion example in ${out}`);

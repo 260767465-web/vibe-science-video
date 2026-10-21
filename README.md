@@ -6,13 +6,13 @@
 
 用于代码驱动科普动画的中文 Skill：从主题、事实核查和动态分镜，推进到 Remotion 工程、预览与 MP4 交付。
 
-> 来源声明：本项目基于 **Git源宝** 相关教程的学习整理与方法改编，包含独立编写的代码和辅助工具。非原作者官方产品，不分发原版 PDF 或完整提示词。请先阅读 [来源与使用边界](NOTICE.md)。
+> 来源声明：本项目在 AI 辅助下，基于 **Git源宝** 相关教程学习整理与方法改编，并编写代码和辅助工具。非原作者官方产品，不宣称教程方法与 15 类风格由本项目首创，不分发原版 PDF 或完整提示词。请先阅读 [来源与使用边界](NOTICE.md)。
 
 ## 包含什么
 
 - [可安装的 Skill](SKILL.md)：有范围明确的触发描述和制作流程。
 - [15 种风格选型指南](references/styles.md)：解释适合什么内容、需要保留哪些视觉特征；不是 15 个现成工程。
-- [动态分镜方法](references/workflow.md)及[独立改写的提示词](references/prompts.md)。
+- [动态分镜方法](references/workflow.md)及[重新编写的制作提示词](references/prompts.md)，分别标注方法来源。
 - 跨平台 Node 安装脚本、独立 Remotion 示例脚手架和时间轴检查工具。
 - [中文介绍页源码](docs/index.html)：交互式风格选择、制作请求生成器和示例预览。
 
@@ -56,6 +56,8 @@ npm run render
 
 示例是独立编写的 6 秒制作流程示意，输出 1920×1080、30fps 的 H.264 MP4。它验证中文、路径动画和工程渲染，不是某一期完整科普片。代码基线是 Remotion 4.0.537；使用最新版时统一升级全部 Remotion 包并重新验证。
 
+生成的工程会携带 LICENSE、NOTICE.md 与 THIRD_PARTY_NOTICES.md。Remotion 本身采用[专门的许可条款](https://www.remotion.dev/docs/license)，不受本项目 MIT 许可覆盖；其他依赖及系统字体仍适用各自许可。
+
 ## 方法
 
 1. 明确受众和一个核心问题，核查关键事实。
@@ -78,6 +80,8 @@ Skill 安装和示例渲染已在 Windows 11 x64 验证。Node 脚本使用跨�
 
 ## 来源与许可
 
-感谢 Git源宝公开分享制作经验。原视频、公众号和飞书资料链接统一保留在 [NOTICE.md](NOTICE.md)。
+感谢 **Git源宝** 分享制作经验，也列明学习时辅助对照的 **Vincentwei1021 / mg-styles-15** 项目；未核实两者资料的来源关系。原视频、公众号、飞书资料、补充参考及逐项处理方式见 [NOTICE.md](NOTICE.md)，软件与字体说明见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 
-本项目新增代码、页面实现、示例与独立编写内容使用 [MIT](LICENSE)；第三方资料与相关权利不在该许可的授予范围内。署名不等于取得转载许可，免责声明也不能代替必要授权。
+[MIT](LICENSE)仅在维护者有权授予的范围内适用本项目新增内容，不代授原教程、依赖软件、字体或商标权利。图形、视频和封面的来源已逐项记录；未内置原图、原视频、第三方音乐或字体文件。署名、改写和免责声明均不自动代替必要授权；本次检查也不构成无侵权保证。
+
+权利人可通过[仓库 Issue](https://github.com/260767465-web/vibe-science-video/issues/new)提出署名、替换或移除诉求。查阅[网页来源与许可说明](https://260767465-web.github.io/vibe-science-video/rights.html)。

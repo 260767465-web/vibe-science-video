@@ -21,7 +21,7 @@ try { await access(target); exists = true; } catch {}
 if (exists) throw new Error(`Target already exists; nothing was overwritten: ${target}`);
 await mkdir(path.dirname(target), { recursive: true });
 await mkdir(target);
-for (const item of ['SKILL.md', 'NOTICE.md', 'LICENSE', 'agents', 'references', 'assets', 'scripts']) {
+for (const item of ['SKILL.md', 'NOTICE.md', 'THIRD_PARTY_NOTICES.md', 'LICENSE', 'agents', 'references', 'assets', 'scripts']) {
   await cp(path.join(root, item), path.join(target, item), { recursive: true });
 }
 console.log(`Installed vibe-science-video to ${target}`);
