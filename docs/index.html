@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="把一个问题变成看得懂的动画。Vibe 科普动画 Skill：从知识核查、动态分镜到 Remotion 工程与视频导出，附风格指南与可运行示例。">
+  <meta name="theme-color" content="#10151b">
+  <title>Vibe 科普动画 · 让知识动起来</title>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header wrap">
+  <a class="brand" href="#" aria-label="Vibe 科普动画首页"><img src="assets/mark.svg" width="34" height="34" alt=""><span>VIBE<span class="brand-small">SCIENCE VIDEO</span></span></a>
+  <nav aria-label="主导航"><a href="#workflow">制作方法</a><a href="#styles">风格实验室</a><a href="#start">开始创作</a></nav>
+  <a class="text-link repo-link" href="https://github.com/260767465-web/vibe-science-video" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+</header>
+<main id="main">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="dot"></span> A SKILL FOR EXPLAINING THINGS</p>
+      <h1>把一个问题，<br>变成<span class="underline">看得懂</span><br class="desktop-break">的动画。</h1>
+      <p class="lead">让 AI 写脚本、画分镜、搭动画。<br>把灵感变成一套能预览、能修改、能导出的创作流程。</p>
+      <div class="actions"><a class="button primary" href="#start">试着给出一个主题 <span aria-hidden="true">↗</span></a><a class="button quiet" href="#demo">看 6 秒示例 <span aria-hidden="true">▶</span></a></div>
+      <div class="hero-meta"><span>可安装 Skill</span><i></i><span>Remotion 工程</span><i></i><span>15 种风格指南</span></div>
+    </div>
+    <div class="hero-stage" aria-label="动画制作流程示意：问题经过变化，成为理解">
+      <div class="stage-top"><span><b class="live-dot"></b> IDEA → MOTION</span><span>SCENE 01 / 03</span></div>
+      <div class="stage-art">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <svg class="motion-path" viewBox="0 0 560 400" fill="none" aria-hidden="true"><path class="route-muted" d="M96 250 C150 250 140 110 275 110 S375 285 467 250"/><path class="route" d="M96 250 C150 250 140 110 275 110 S375 285 467 250"/><circle class="traveller" r="5" fill="#d4ff76"><animateMotion dur="5s" repeatCount="indefinite" path="M96 250 C150 250 140 110 275 110 S375 285 467 250"/></circle></svg>
+        <div class="art-node node-one"><span>?</span><small>一个问题</small></div>
+        <div class="art-node node-two"><span>↗</span><small>一次变化</small></div>
+        <div class="art-node node-three"><span>!</span><small>终于理解</small></div>
+        <span class="stage-note note-one">MAKE IT CLEAR.</span><span class="stage-note note-two">先讲明白，再让它动起来。</span>
+      </div>
+      <div class="timeline"><span>00:00</span><div class="timeline-track"><i></i><b></b></div><span>00:06</span></div>
+      <div class="stage-bottom"><span>● 解释型动画 / 流程示意</span><button id="motion-toggle" type="button" aria-pressed="false">暂停动效 Ⅱ</button></div>
+    </div>
+    <a class="scroll-cue" href="#workflow">向下探索 <span aria-hidden="true">↓</span></a>
+  </section>
+
+  <section class="workflow section wrap" id="workflow">
+    <div class="section-heading"><div><p class="eyebrow">01 / THE METHOD</p><h2>不是一句魔法提示词。<br>是一条创作路径。</h2></div><p>先确定要讲什么，再决定怎么动。<br>每一步都留下可继续修改的成果。</p></div>
+    <div class="workflow-rows">
+      <article><span class="step">01</span><h3>找准问题</h3><p>明确观众、平台和核心结论。核查事实，给关键说法留来源。</p><span class="output">选题简报 ↗</span></article>
+      <article><span class="step">02</span><h3>写出动态分镜</h3><p>把旁白、画面、动作与时长写在一起。让“变化”真正解释过程。</p><span class="output">脚本 + 分镜 ↗</span></article>
+      <article><span class="step">03</span><h3>建立视觉规则</h3><p>选定颜色、字体、图形和运动节奏。一个视频只讲同一种视觉语言。</p><span class="output">风格说明 ↗</span></article>
+      <article><span class="step">04</span><h3>用代码让它动</h3><p>在 Remotion 中组织场景与时间轴。逐段预览，只修改出问题的地方。</p><span class="output">可编辑工程 ↗</span></article>
+      <article><span class="step">05</span><h3>验证，然后导出</h3><p>检查文字、因果、字幕和声音，完整播放导出的 MP4，再准备发布。</p><span class="output">视频 + 检查记录 ↗</span></article>
+    </div>
+  </section>
+
+  <section class="demo-band" id="demo"><div class="wrap demo-layout">
+    <div><p class="eyebrow">BUILT WITH THE INCLUDED STARTER</p><h2>先让第一条<br>时间轴跑起来。</h2><p>一个独立编写的 6 秒流程动画。<br>三个场景、一条时间轴，随 Skill 一起提供源码。</p><div class="specs"><span>1920 × 1080</span><span>30 FPS</span><span>180 帧</span></div><p class="fine">这是制作流程示意，无配音；不是完整科普成片。</p></div>
+    <figure><video controls playsinline preload="metadata" poster="assets/demo-poster.jpg" aria-label="六秒 Remotion 示例：从问题到变化到理解"><source src="assets/demo.mp4" type="video/mp4">浏览器无法播放此视频，请<a href="assets/demo.mp4">下载示例视频</a>。</video><figcaption><span>EXAMPLE 001</span> 问题 → 变化 → 理解 <a href="assets/demo.mp4" download>下载 MP4 ↓</a></figcaption></figure>
+  </div></section>
+
+  <section class="section wrap" id="styles">
+    <div class="section-heading"><div><p class="eyebrow">02 / STYLE LAB</p><h2>同一个知识，<br>可以有不同的样子。</h2></div><p>从表达目的出发选择风格。<br>点击卡片，查看适用方向与运动建议。</p></div>
+    <div class="filter-bar" role="group" aria-label="风格分类"><button type="button" class="selected" data-filter="all" aria-pressed="true">全部 <sup>15</sup></button><button type="button" data-filter="paper" aria-pressed="false">手作与叙事</button><button type="button" data-filter="geometry" aria-pressed="false">图形与秩序</button><button type="button" data-filter="space" aria-pressed="false">空间与界面</button><button type="button" data-filter="effects" aria-pressed="false">光效与流动</button></div>
+    <p class="fine styles-note">以下为本项目绘制的风格示意与选型摘要，非原作者的原版模板或成片。</p>
+    <div id="style-grid" class="style-grid"></div><noscript><p>启用 JavaScript 后可浏览交互风格卡片。完整指南也可在 Skill 的 references/styles.md 中阅读。</p></noscript>
+  </section>
+
+  <section class="request-section section" id="start"><div class="wrap">
+    <div class="section-heading"><div><p class="eyebrow">03 / YOUR NEXT VIDEO</p><h2>下一次，只需换一个方向。</h2></div><p>填好这张创作卡，复制给已安装 Skill 的 AI。<br>这里生成需求文本，不会调用付费服务。</p></div>
+    <div class="request-builder">
+      <form id="brief-form" class="brief-form">
+        <label class="full">想讲什么？<input id="topic" name="topic" type="text" value="为什么降噪耳机能让世界安静下来？" maxlength="160" required></label>
+        <label>讲给谁听？<input id="audience" name="audience" type="text" value="没有专业背景的普通观众" maxlength="100"></label>
+        <label>预计时长<select id="duration" name="duration"><option value="60">60 秒</option><option value="90" selected>90 秒</option><option value="140">140 秒</option></select></label>
+        <label>发布画幅<select id="platform" name="platform"><option value="横屏 16:9，1920×1080">横屏 16:9 · B站</option><option value="竖屏 9:16，1080×1920">竖屏 9:16 · 抖音 / 小红书</option><option value="方形 1:1，1080×1080">方形 1:1</option></select></label>
+        <label>画面风格<select id="style-select" name="style"><option>扁平几何</option></select></label>
+        <label class="full">配音<select id="voice" name="voice"><option value="先提供旁白稿与字幕，不调用语音服务">先写旁白稿，暂不生成配音</option><option value="需要配音，请先确认可用语音工具、声音与费用">需要配音，先确认声音与费用</option></select></label>
+      </form>
+      <div class="prompt-panel"><div class="prompt-heading"><span>YOUR CREATIVE BRIEF</span><span class="dot"></span></div><label class="sr-only" for="prompt-output">生成的创作需求</label><textarea id="prompt-output" rows="12" readonly spellcheck="false"></textarea><div class="prompt-bottom"><span id="copy-status" role="status" aria-live="polite">先安装 Skill，再复制这段需求。</span><button class="button primary" id="copy-prompt" type="button">复制需求 ↗</button></div></div>
+    </div>
+  </div></section>
+
+  <section class="section wrap install-section" id="install">
+    <div><p class="eyebrow">04 / TAKE IT WITH YOU</p><h2>把这套方法，<br>装进下一次创作。</h2><p>下载 Skill 压缩包，解压后运行安装脚本。<br>支持 Codex；安装过程不会安装依赖或调用外部 API。</p><a class="button primary" href="assets/vibe-science-video.zip" download>下载 Skill ZIP <span aria-hidden="true">↓</span></a><p class="fine">需要 Node.js。目标目录已存在时，脚本会停止，保留原有文件。</p></div>
+    <div class="install-steps"><div><span>1</span><p>解压并进入 <code>vibe-science-video</code> 文件夹。</p></div><div><span>2</span><p>在终端运行：</p><pre><code>node scripts/install.mjs</code></pre><button class="copy-command" id="copy-install" type="button">复制命令</button></div><div><span>3</span><p>新开一段对话，使用 <code>$vibe-science-video</code>，附上你的主题。</p></div><a class="repo-link text-link" href="https://github.com/260767465-web/vibe-science-video#readme" target="_blank" rel="noopener noreferrer">查看完整源码与安装说明 ↗</a></div>
+  </section>
+
+  <section class="credits wrap" id="credits"><p class="eyebrow">CREDIT WHERE IT'S DUE</p><div><h2>好方法，记得它的来处。</h2><p>本项目基于 <strong>Git源宝</strong> 的公开教程学习整理与方法改编，由「王磊发现新玩意」整理为 Skill，并独立编写页面、脚本与示例。非原作者官方项目。</p><p>原版 PDF、完整提示词和原版风格模板未收录。请前往原作者渠道获取；署名与免责声明不代替必要的转载授权。MIT 许可仅覆盖本项目有权许可的新增内容。</p><div class="credit-links"><a href="https://www.bilibili.com/video/BV1ALnw6YEM7/" target="_blank" rel="noopener noreferrer">B站原视频 ↗</a><a href="https://mp.weixin.qq.com/s?__biz=MzIyODMzMjg4Ng==&amp;mid=2247488520&amp;idx=1&amp;sn=4d54c2ed5622a8b390d15f830bf9e849" target="_blank" rel="noopener noreferrer">公众号原文 ↗</a><a href="https://gcnw06d95nrz.feishu.cn/docx/KtSgdMmi7oCZS2xqMKXcWCKqndc" target="_blank" rel="noopener noreferrer">飞书配套资料 ↗</a><a class="notice-link" href="NOTICE.txt">来源与许可说明 ↗</a></div></div></section>
+</main>
+<footer class="wrap"><a class="brand" href="#"><img src="assets/mark.svg" width="26" height="26" alt=""> VIBE</a><span>让知识动起来。让来源被看见。</span><span>© 2026 王磊发现新玩意</span></footer>
+<dialog id="style-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow">STYLE NOTES</span><button id="dialog-close" class="icon-button" type="button" aria-label="关闭风格详情">×</button></div><div id="dialog-art" class="style-art"></div><h2 id="dialog-title"></h2><p id="dialog-description"></p><dl><dt>适合表达</dt><dd id="dialog-use"></dd><dt>运动建议</dt><dd id="dialog-motion"></dd></dl><button id="use-style" class="button primary" type="button">用这个风格写需求 ↗</button></dialog>
+</body></html>

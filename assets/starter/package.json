@@ -1,0 +1,23 @@
+{
+  "name": "vibe-science-video-example",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": "^20.19.0 || ^22.13.0 || >=24" },
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "check": "node scripts/check-timeline.mjs src/scene-plan.json && tsc --noEmit",
+    "render": "remotion render src/index.ts ScienceVideo out/video.mp4 --codec=h264 --concurrency=2"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.537",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.537"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,12 @@
+node_modules/
+.local/
+.cache/
+out/
+*.log
+.env
+.env.*
+!.env.example
+*.pdf
+__pycache__/
+.DS_Store
+Thumbs.db

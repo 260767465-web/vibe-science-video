@@ -1,0 +1,12 @@
+{
+  "name": "vibe-science-video-skill",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A portable skill and guide for code-driven educational animations",
+  "scripts": {
+    "check": "node scripts/check-timeline.mjs examples/scene-plan.json",
+    "install-skill": "node scripts/install.mjs"
+  },
+  "license": "MIT"
+}

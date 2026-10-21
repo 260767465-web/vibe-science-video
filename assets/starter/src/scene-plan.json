@@ -1,0 +1,12 @@
+{
+  "topic": "从问题到理解：制作流程示意",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 180,
+  "scenes": [
+    { "id": "question", "from": 0, "durationInFrames": 60, "title": "先有一个好问题", "subtitle": "先想清楚，观众需要理解什么。" },
+    { "id": "change", "from": 60, "durationInFrames": 60, "title": "再把过程画出来", "subtitle": "对象、关系、变化，共同组成解释。" },
+    { "id": "understanding", "from": 120, "durationInFrames": 60, "title": "让答案看得见", "subtitle": "用演示回答问题，再验证实际成片。" }
+  ]
+}
